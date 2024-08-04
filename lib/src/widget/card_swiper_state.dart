@@ -223,16 +223,16 @@ class _CardSwiperState<T extends Widget> extends State<CardSwiper>
   }
 
   CardSwiperDirection _getEndAnimationDirection() {
-    if (_cardAnimation.left.abs() > widget.threshold) {
-      return _cardAnimation.left.isNegative
-          ? CardSwiperDirection.left
-          : CardSwiperDirection.right;
-    }
-    if (_cardAnimation.top.abs() > widget.threshold) {
-      return _cardAnimation.top.isNegative
-          ? CardSwiperDirection.top
-          : CardSwiperDirection.bottom;
-    }
+    // if (_cardAnimation.left.abs() > widget.threshold) {
+    //   return _cardAnimation.left.isNegative
+    //       ? CardSwiperDirection.left
+    //       : CardSwiperDirection.right;
+    // }
+    // if (_cardAnimation.top.abs() > widget.threshold) {
+    //   return _cardAnimation.top.isNegative
+    //       ? CardSwiperDirection.top
+    //       : CardSwiperDirection.bottom;
+    // }
     return CardSwiperDirection.none;
   }
 
